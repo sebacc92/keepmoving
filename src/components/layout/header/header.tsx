@@ -1,5 +1,6 @@
 import { component$ } from '@builder.io/qwik';
 import { MenuIcon } from 'lucide-qwik';
+import KeepMovingLogo from '~/media/keepmoving-logo.webp';
 
 export const Header = component$(() => {
     return (
@@ -7,8 +8,9 @@ export const Header = component$(() => {
             <div class="container mx-auto flex h-20 items-center justify-between px-4 lg:px-8">
                 {/* Logo */}
                 <a href="/" class="flex items-center gap-2">
-                    <span class="font-heading text-2xl font-bold tracking-tight text-white uppercase">
-                        <span class="text-primary">KM</span> <span class="text-white/30 font-light hidden sm:inline-block">|</span> <span class="hidden sm:inline-block">Keep Moving</span>
+                    <img src={KeepMovingLogo} alt="Keep Moving Miramar Logo" class="h-16 w-auto" />
+                    <span class="font-heading text-2xl font-bold tracking-tight text-white uppercase hidden sm:inline-block">
+                        <span class="text-white/30 font-light">|</span> Keep Moving
                     </span>
                 </a>
 

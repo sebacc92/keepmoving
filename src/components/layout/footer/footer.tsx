@@ -1,5 +1,6 @@
 import { component$ } from '@builder.io/qwik';
 import { MapPinIcon, PhoneIcon, InstagramIcon } from 'lucide-qwik';
+import KeepMovingLogo from '~/media/keepmoving-logo.webp';
 
 export const Footer = component$(() => {
     return (
@@ -8,9 +9,12 @@ export const Footer = component$(() => {
                 <div class="grid gap-12 md:grid-cols-3">
                     {/* Brand Info */}
                     <div>
-                        <span class="font-heading text-3xl font-bold tracking-tight text-white uppercase">
-                            <span class="text-primary">KM</span> | Keep Moving
-                        </span>
+                        <a href="/" class="inline-flex items-center gap-3">
+                            <img src={KeepMovingLogo} alt="Keep Moving Miramar Logo" class="h-16 w-auto" />
+                            <span class="font-heading text-3xl font-bold tracking-tight text-white uppercase">
+                                Keep Moving
+                            </span>
+                        </a>
                         <p class="mt-6 text-white/70 max-w-xs text-sm leading-relaxed">
                             No solo entrenamos el cuerpo. Ayudamos a construir tu mejor versión. Moverse es avanzar.
                         </p>
