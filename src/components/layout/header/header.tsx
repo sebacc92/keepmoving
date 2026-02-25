@@ -1,8 +1,10 @@
-import { component$ } from '@builder.io/qwik';
-import { MenuIcon } from 'lucide-qwik';
+import { component$, useSignal } from '@builder.io/qwik';
+import { MenuIcon, XIcon } from 'lucide-qwik';
 import KeepMovingLogo from '~/media/keepmoving-logo.webp';
 
 export const Header = component$(() => {
+    const isMenuOpen = useSignal(false);
+
     return (
         <header class="sticky top-0 z-50 w-full border-b border-white/10 bg-background/80 backdrop-blur-md">
             <div class="container mx-auto flex h-20 items-center justify-between px-4 lg:px-8">
@@ -33,10 +35,32 @@ export const Header = component$(() => {
                 </a>
 
                 {/* Mobile menu button */}
-                <button class="md:hidden text-white hover:text-primary transition-colors p-2">
-                    <MenuIcon class="h-6 w-6" />
+                <button
+                    onClick$={() => isMenuOpen.value = !isMenuOpen.value}
+                    class="md:hidden text-white hover:text-primary transition-colors p-2"
+                >
+                    {isMenuOpen.value ? <XIcon class="h-6 w-6" /> : <MenuIcon class="h-6 w-6" />}
                 </button>
             </div>
+
+            {/* Mobile Nav */}
+            {isMenuOpen.value && (
+                <div class="md:hidden absolute top-20 left-0 w-full bg-[#050505]/95 backdrop-blur-md border-b border-white/10 flex flex-col items-center py-8 gap-6 shadow-2xl">
+                    <a href="#inicio" onClick$={() => isMenuOpen.value = false} class="text-sm font-bold tracking-wide text-white/80 hover:text-primary transition-colors uppercase">Inicio</a>
+                    <a href="#disciplinas" onClick$={() => isMenuOpen.value = false} class="text-sm font-bold tracking-wide text-white/80 hover:text-primary transition-colors uppercase">Disciplinas</a>
+                    <a href="#horarios" onClick$={() => isMenuOpen.value = false} class="text-sm font-bold tracking-wide text-white/80 hover:text-primary transition-colors uppercase">Horarios</a>
+                    <a href="#ubicacion" onClick$={() => isMenuOpen.value = false} class="text-sm font-bold tracking-wide text-white/80 hover:text-primary transition-colors uppercase">Ubicación</a>
+                    <a
+                        href="https://wa.me/5491125358621?text=Hola!%20Quiero%20inscribirme%20en%20Keep%20Moving"
+                        target="_blank"
+                        onClick$={() => isMenuOpen.value = false}
+                        class="mt-4 inline-flex items-center justify-center bg-primary px-8 py-3 text-sm font-bold uppercase tracking-wide text-black transition-all hover:bg-primary/90"
+                        style="clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);"
+                    >
+                        Inscribite Ahora
+                    </a>
+                </div>
+            )}
         </header>
     );
 });

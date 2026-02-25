@@ -11,11 +11,12 @@ export const Hero = component$(() => {
             <div class="container relative mx-auto px-4 lg:px-8 flex flex-col items-center text-center z-10">
 
                 {/* Promo Badge */}
-                <div class="mb-8 animate-pulse rounded-full border border-primary/50 bg-primary/10 px-4 py-1.5 text-sm font-bold text-primary shadow-[0_0_15px_rgba(212,175,55,0.3)] backdrop-blur-md flex items-center gap-2 max-w-full sm:max-w-xl text-left sm:text-center justify-center">
-                    <StarIcon class="h-4 w-4 shrink-0" />
-                    <span class="truncate sm:whitespace-normal">
+                <div class="mb-8 animate-pulse rounded-2xl sm:rounded-full border border-primary/50 bg-primary/10 px-4 sm:px-6 py-2 sm:py-1.5 text-xs sm:text-sm font-bold text-primary shadow-[0_0_15px_rgba(212,175,55,0.3)] backdrop-blur-md flex items-center gap-2 max-w-[90vw] sm:max-w-xl text-center justify-center mx-auto">
+                    <StarIcon class="h-4 w-4 shrink-0 hidden sm:block" />
+                    <span>
+                        <StarIcon class="h-3 w-3 sm:hidden mb-0.5 inline-block mr-1" />
                         ¡PROMO APERTURA! Vení con alguien y el 2do abona el 50% <br class="hidden sm:block" />
-                        <span class="inline-block mt-1 sm:mt-0 opacity-80">(Válido hasta el 1/3)</span>
+                        <span class="inline-block mt-0.5 sm:mt-0 opacity-80">(Válido hasta el 1/3)</span>
                     </span>
                 </div>
 
