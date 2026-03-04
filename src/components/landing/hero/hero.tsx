@@ -15,28 +15,23 @@ export const Hero = component$(() => {
                     <StarIcon class="h-4 w-4 shrink-0 hidden sm:block" />
                     <span>
                         <StarIcon class="h-3 w-3 sm:hidden mb-0.5 inline-block mr-1" />
-                        ¡PROMO APERTURA! Vení con alguien y el 2do abona el 50% <br class="hidden sm:block" />
-                        <span class="inline-block mt-0.5 sm:mt-0 opacity-80">(Válido hasta el 1/3)</span>
+                        <h1>Gimnasio en Miramar</h1>
                     </span>
                 </div>
 
                 {/* Headline */}
-                <h1 class="font-heading text-5xl font-black tracking-tight text-white sm:text-7xl md:text-8xl max-w-5xl uppercase leading-[0.9]">
+                <h2 class="font-heading text-5xl font-black tracking-tight text-white sm:text-7xl md:text-8xl max-w-5xl uppercase leading-[0.9]">
                     Tu mejor versión <br class="hidden lg:block" /> se <br class="hidden sm:block lg:hidden" />
                     <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-yellow-200 drop-shadow-[0_0_10px_rgba(212,175,55,0.3)]">
                         construye en movimiento.
                     </span>
-                </h1>
+                </h2>
 
                 {/* Subheadline */}
                 <div class="mt-8 flex flex-col items-center gap-4 text-center">
                     <p class="max-w-2xl text-lg font-medium text-white/80 sm:text-xl">
                         Entrenamiento consciente, fuerza y comunidad en Miramar.
                     </p>
-                    <div class="inline-flex items-center justify-center gap-2 rounded-lg border border-primary/50 bg-primary/10 px-6 py-2 text-lg sm:text-xl font-bold text-white shadow-[0_0_20px_rgba(212,175,55,0.3)] backdrop-blur-md uppercase tracking-wide">
-                        <CalendarDaysIcon class="h-6 w-6 text-primary" />
-                        <span>¡Apertura <span class="text-primary font-black">2 de Marzo</span>!</span>
-                    </div>
                 </div>
 
                 {/* CTAs */}
