@@ -31,13 +31,13 @@ export const Footer = component$(() => {
                                 </a>
                             </li>
                             <li>
-                                <a href="https://wa.me/5491125358621" target="_blank" class="flex items-center gap-4 text-white/70 hover:text-primary transition-colors">
+                                <a href="https://wa.me/5491125358621?text=Hola,%20vine%20del%20sitio%20web%20y%20me%20gustaria%20consultar%20precios." target="_blank" class="flex items-center gap-4 text-white/70 hover:text-primary transition-colors">
                                     <PhoneIcon class="h-5 w-5 shrink-0 text-primary" />
                                     <span class="text-sm">11 2535-8621 (Fabian)</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://wa.me/5492236231445" target="_blank" class="flex items-center gap-4 text-white/70 hover:text-primary transition-colors">
+                                <a href="https://wa.me/5492236231445?text=Hola,%20vine%20del%20sitio%20web%20y%20me%20gustaria%20consultar%20precios." target="_blank" class="flex items-center gap-4 text-white/70 hover:text-primary transition-colors">
                                     <PhoneIcon class="h-5 w-5 shrink-0 text-primary" />
                                     <span class="text-sm">223 623-1445 (Juan)</span>
                                 </a>

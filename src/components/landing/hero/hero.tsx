@@ -37,7 +37,7 @@ export const Hero = component$(() => {
                 {/* CTAs */}
                 <div class="mt-12 flex w-full flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
                     <a
-                        href="https://wa.me/5491125358621?text=Hola!%20Quiero%20reservar%20mi%20lugar%20aprovechando%20la%20promo%20apertura!"
+                        href="https://wa.me/5491125358621?text=Hola,%20vine%20del%20sitio%20web%20y%20me%20gustaria%20consultar%20precios."
                         target="_blank"
                         class="group flex w-full sm:w-auto items-center justify-center gap-2 bg-primary px-8 py-4 text-sm font-bold uppercase tracking-wide text-black transition-all hover:bg-primary/90 hover:shadow-[0_0_30px_rgba(212,175,55,0.5)]"
                         style="clip-path: polygon(15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 15px);"
