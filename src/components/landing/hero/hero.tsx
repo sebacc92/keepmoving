@@ -15,17 +15,18 @@ export const Hero = component$(() => {
                     <StarIcon class="h-4 w-4 shrink-0 hidden sm:block" />
                     <span>
                         <StarIcon class="h-3 w-3 sm:hidden mb-0.5 inline-block mr-1" />
-                        <h1>Gimnasio en Miramar</h1>
+                        <strong>Gimnasio en Miramar</strong>
                     </span>
                 </div>
 
                 {/* Headline */}
-                <h2 class="font-heading text-5xl font-black tracking-tight text-white sm:text-7xl md:text-8xl max-w-5xl uppercase leading-[0.9]">
+                <h1 class="font-heading text-5xl font-black tracking-tight text-white sm:text-7xl md:text-8xl max-w-5xl uppercase leading-[0.9]">
+                    <span class="sr-only">Gimnasio en Miramar: </span>
                     Tu mejor versión <br class="hidden lg:block" /> se <br class="hidden sm:block lg:hidden" />
                     <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-yellow-200 drop-shadow-[0_0_10px_rgba(212,175,55,0.3)]">
                         construye en movimiento.
                     </span>
-                </h2>
+                </h1>
 
                 {/* Subheadline */}
                 <div class="mt-8 flex flex-col items-center gap-4 text-center">

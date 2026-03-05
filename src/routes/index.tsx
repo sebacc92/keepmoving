@@ -24,15 +24,41 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "KM | Keep Moving Miramar",
+  title: "Keep Moving | Gimnasio y Entrenamiento en Miramar",
   meta: [
     {
       name: "description",
-      content: "Tu mejor versión se construye en movimiento. Entrenamiento consciente, fuerza y comunidad en Miramar. Inauguración 2 de Marzo.",
+      content: "Gimnasio en Miramar. Entrenamiento funcional, fuerza y comunidad. Tu mejor versión se construye en movimiento. ¡Súmate a la tribu!",
     },
     {
       name: "theme-color",
       content: "#050505",
     }
   ],
+  scripts: [
+    {
+      props: {
+        type: "application/ld+json",
+      },
+      script: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "ExerciseGym",
+        "name": "Keep Moving",
+        "url": "https://keepmoving.cleverisma.com/",
+        "telephone": "+5491125358621",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Miramar",
+          "addressRegion": "Buenos Aires",
+          "postalCode": "B7607",
+          "addressCountry": "AR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "", // Rellenar con la latitud de Google Maps
+          "longitude": "" // Rellenar con la longitud de Google Maps
+        }
+      })
+    }
+  ]
 };
