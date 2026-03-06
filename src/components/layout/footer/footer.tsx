@@ -53,12 +53,19 @@ export const Footer = component$(() => {
 
                     {/* Map Placeholder */}
                     <div class="h-56 w-full bg-white/5 border border-white/10 flex items-center justify-center overflow-hidden" style="clip-path: polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px);">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3132.520193124005!2d-57.84338087470966!3d-38.267432715065894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x958510896a14588d%3A0x9445a0a5a1324fa1!2sC.%2019%201692%2C%20B7607%20Miramar%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1772042563389!5m2!1ses!2sar" class="w-full h-full border-0" allowFullscreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe
+                            title="Mapa con la ubicación del gimnasio Keep Moving en Miramar"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3132.520193124005!2d-57.84338087470966!3d-38.267432715065894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x958510896a14588d%3A0x9445a0a5a1324fa1!2sC.%2019%201692%2C%20B7607%20Miramar%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1772042563389!5m2!1ses!2sar"
+                            class="w-full h-full border-0"
+                            allowFullscreen
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                        ></iframe>
                     </div>
                 </div>
 
                 <div class="mt-16 border-t border-white/10 pt-8 text-center flex flex-col sm:flex-row justify-between items-center gap-4">
-                    <p class="text-xs text-white/40 uppercase tracking-wider">
+                    <p class="text-xs text-white/70 uppercase tracking-wider">
                         &copy; {new Date().getFullYear()} Keep Moving Miramar.
                     </p>
                     <a href="https://cleverisma.com/" target="_blank" class="text-xs text-white/50 uppercase hover:text-primary transition-colors tracking-wider border-b border-white/20 hover:border-primary pb-0.5">

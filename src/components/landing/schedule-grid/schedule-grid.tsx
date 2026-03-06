@@ -114,8 +114,8 @@ export const ScheduleGrid = component$(() => {
                                 key={f.id}
                                 onClick$={() => selectedFilter.value = f.id as any}
                                 class={`px-4 py-2 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider transition-all border ${selectedFilter.value === f.id
-                                        ? 'bg-white text-black border-white shadow-[0_0_15px_rgba(255,255,255,0.3)]'
-                                        : 'bg-white/5 text-white/60 border-white/10 hover:border-white/30 hover:text-white'
+                                    ? 'bg-white text-black border-white shadow-[0_0_15px_rgba(255,255,255,0.3)]'
+                                    : 'bg-white/5 text-white/60 border-white/10 hover:border-white/30 hover:text-white'
                                     }`}
                             >
                                 {f.label}
@@ -132,8 +132,8 @@ export const ScheduleGrid = component$(() => {
                                 key={day.name}
                                 onClick$={() => selectedDay.value = day.name}
                                 class={`snap-center shrink-0 px-6 py-3 rounded-md text-sm font-bold uppercase tracking-widest transition-all border ${selectedDay.value === day.name
-                                        ? 'bg-primary text-black border-primary shadow-[0_0_15px_rgba(212,175,55,0.4)]'
-                                        : 'bg-[#111] text-white/50 border-white/5 hover:bg-white/5'
+                                    ? 'bg-primary text-black border-primary shadow-[0_0_15px_rgba(212,175,55,0.4)]'
+                                    : 'bg-[#111] text-white/50 border-white/5 hover:bg-white/5'
                                     }`}
                             >
                                 {day.short}
@@ -148,7 +148,7 @@ export const ScheduleGrid = component$(() => {
                                 <div key={slot.id} class="bg-[#111] border border-white/5 rounded-lg p-4 flex flex-col gap-3">
                                     <div class="flex items-center justify-between border-b border-white/10 pb-2">
                                         <span class="text-white font-mono font-bold text-lg">{slot.time}</span>
-                                        <span class="text-white/40 text-xs font-medium uppercase tracking-wider">{slot.duration} MIN</span>
+                                        <span class="text-white/70 text-xs font-medium uppercase tracking-wider">{slot.duration} MIN</span>
                                     </div>
                                     <div class="flex flex-col gap-2">
                                         {slot.activities.map((act, i) => {

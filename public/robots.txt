@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://keepmoving.cleverisma.com/sitemap.xml

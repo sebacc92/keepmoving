@@ -38,6 +38,9 @@ export const Header = component$(() => {
                 <button
                     onClick$={() => isMenuOpen.value = !isMenuOpen.value}
                     class="md:hidden text-white hover:text-primary transition-colors p-2"
+                    aria-label={isMenuOpen.value ? "Cerrar menú principal" : "Abrir menú principal"}
+                    aria-expanded={isMenuOpen.value}
+                    aria-controls="mobile-menu"
                 >
                     {isMenuOpen.value ? <XIcon class="h-6 w-6" /> : <MenuIcon class="h-6 w-6" />}
                 </button>
